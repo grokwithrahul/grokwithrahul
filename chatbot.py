@@ -1,8 +1,18 @@
 import Functions.travelhandler as travel
+import time
 
-cmdin = input("Hello, I am your virtual assistant. For flight booking, type 'Flight': ")
+name = input("Hello, I am your virtual assistant. What is your name?: ")
+print("Hello "+name+", I am ChatBot.")
 
-if cmdin == "Flight":
-    location = input("Where do you want to fly to?: ")
-    out = travel.flightsearch(location)
-    print(out)
+time.sleep(1.5)
+
+while True:
+    cmdin = input("To search for flights, type in 'Flight'. To search for Trains, type in 'Train': ")
+    if cmdin == "Flight":
+        location = input("Where do you want to fly to?: ")
+        out = travel.flightsearch(location)
+        print(out)
+    elif cmdin =="Train":
+        location = input("Where do you want to travel to?: ")
+        out = travel.trainsearch(location)
+        print(out)
