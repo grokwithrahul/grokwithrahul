@@ -11,8 +11,8 @@ while True:
     if cmdin == "Flight":
         location = input("Where do you want to fly to?: ")
 #        out = travel.flightsearch(location)
-        print(out)
+#        print(out)
     elif cmdin == "Train":
         location = input("Where do you want to travel to?: ")
 #        out = travel.trainsearch(location)
-        print(out)
+#        print(out)
