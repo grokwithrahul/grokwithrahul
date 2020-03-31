@@ -1,8 +1,9 @@
-#import class1.jokebot
+#import jokebot
+#import travelhandler as travel
 import time
 
 name = input("Hello, I am your virtual assistant. What is your name?: ")
-print("Hello "+name+", I am ChatBot.")
+print("Hello ",name,", I am ChatBot.")
 
 time.sleep(1.5)
 
@@ -11,8 +12,15 @@ while True:
     if cmdin == "Flight":
         location = input("Where do you want to fly to?: ")
 #        out = travel.flightsearch(location)
-#        print(out)
+        print(out)
     elif cmdin == "Train":
         location = input("Where do you want to travel to?: ")
 #        out = travel.trainsearch(location)
-#        print(out)
+        print(out)
+    elif cmdin == "Joke":
+        type = input("Do you want to hear a 'Riddle' or a 'Knock Knock'?: ")
+#        out = jokebot(type)
+        print(out)
+    else:
+        out = "Input a valid command."
+        print(out)
