@@ -49,4 +49,4 @@ def jokebot(type):
         return(out)
     elif type == "Riddle":
         riddle, answer = random.choice(list(riddle_dict.items())) #Look at the randoom module's documentation
-        return (riddle, answer)
+        return(riddle, answer)

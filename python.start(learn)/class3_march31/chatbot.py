@@ -17,11 +17,9 @@ time.sleep(1.5)
 while True:
     cmdin = input("To hear a joke, type in 'Joke': ")
     if cmdin == "Joke":
-        type = input("Do you want to hear a 'Riddle' or a 'Knock Knock'?: ")
-        out = jb.jokebot(type) # We are using jokebot.py's (which we imported as jb) jokebot function
+        type_of_joke = input("Do you want to hear a 'Riddle' or a 'Knock Knock'?: ")
+        out = jb.jokebot(type_of_joke) # We are using jokebot.py's (which we imported as jb) jokebot function
         print(out)
     else:
         out = "Input a valid command."
         print(out)
-
-
